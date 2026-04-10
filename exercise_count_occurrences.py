@@ -11,4 +11,10 @@ def count_occurrences(lista, elemento):
     Returns:
         Un entero con la cantidad de veces que aparece el elemento
     """
-    pass  # Reemplazar con tu implementación
+    # Reemplazar con tu implementación
+    cont = 0
+    for num in lista:
+        if num == elemento:
+            cont += 1
+
+    return cont

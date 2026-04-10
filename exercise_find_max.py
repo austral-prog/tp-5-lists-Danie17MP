@@ -11,4 +11,12 @@ def find_max(lista):
     Returns:
         El valor máximo de la lista o None si está vacía
     """
-    pass  # Reemplazar con tu implementación
+    # Reemplazar con tu implementación
+    maxi = float("-infinity")
+    if len(lista) > 0:
+        for num in lista:
+            if maxi < num:
+                maxi = num
+        return maxi
+    else:
+        return None

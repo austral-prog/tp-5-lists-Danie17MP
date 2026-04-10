@@ -11,4 +11,13 @@ def remove_elements(lista):
     Returns:
         La lista después de remover los elementos indicados
     """
-    pass  # Reemplazar con tu implementación
+    # Reemplazar con tu implementación
+    if len(lista) >= 6:   # Es mayor o igual a 6 elementos
+        del lista[5]      # Saca el sexto
+    if len(lista) >= 5:   # Es mayor o igual a 5 elementos
+        del lista[4]      # Saca el quinto
+    try:
+        del lista[0]
+    except IndexError:
+        return lista
+    return lista

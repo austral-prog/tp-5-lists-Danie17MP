@@ -11,4 +11,12 @@ def find_min(lista):
     Returns:
         El valor mínimo de la lista o None si está vacía
     """
-    pass  # Reemplazar con tu implementación
+    # Reemplazar con tu implementación
+    mini = float("infinity")
+    if len(lista) > 0:
+        for num in lista:
+            if mini > num:
+                mini = num
+        return mini
+    else:
+        return None

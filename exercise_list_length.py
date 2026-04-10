@@ -10,4 +10,9 @@ def list_length(lista):
     Returns:
         Un entero con la cantidad de elementos
     """
-    pass  # Reemplazar con tu implementación
+    # Reemplazar con tu implementación
+    cont = 0
+    for element in lista:
+        cont+=1
+
+    return cont
